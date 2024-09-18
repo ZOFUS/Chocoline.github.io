@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --primary: #088178;
+    --bg-color: #f8f8f8;
+    --header-bg: #eaeaea;
+    --desc-color: #707070;
+    --about-color: #484343;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+h5 {
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--header-bg);
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Краткое описание товара */
+#description {
+    color: var(--desc-color);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Подробное описание товара */
+#about {
+    color: var(--about-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Список характеристик */
+#composition1, #composition2 {
+    color: var(--about-color);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Стилизованный список */
+ul#product-specs {
+    list-style-image: url('./img/bullet-icon.png');
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul#product-specs li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--about-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Общие стили для продукта */
+#product-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+.single-product-image {
+    flex: 1;
+}
+
+.single-product-details {
+    flex: 1.2;
+    padding-left: 15px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #d0d4e6;
+    box-shadow: 0px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+button.normal {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: rgb(9, 255, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(158, 155, 155);
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a:hover {
+    color: #088178;
+}
+
+.footer-background {
+    background-color: #3d3d3d;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
